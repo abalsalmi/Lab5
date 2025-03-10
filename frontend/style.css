@@ -1,0 +1,87 @@
+body {
+  font-family: "Cinzel", serif;
+  background: url("https://www.transparenttextures.com/patterns/paper-3.png");
+  color: #3e2723;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #5d4037;
+  color: #fff;
+  padding: 20px 10px;
+  border-bottom: 5px solid #d7ccc8;
+  font-family: "MedievalSharp", cursive;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 800px;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#image-results {
+  gap: 10px;
+}
+
+#image-results img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+#image-results img.selected {
+  border-color: #8d6e63;
+}
+
+#meme-canvas {
+  border: 3px solid #5d4037;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.form-control {
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+}
+
+.btn {
+  font-family: "MedievalSharp", cursive;
+  font-size: 1.1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}

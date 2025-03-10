@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Medieval Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap for layout from https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="text-center py-3">
+      <h1>Meme Generator</h1>
+      <p class="lead">Create your own memes with a touch of medieval magic!</p>
+    </header>
+
+    <main class="container my-4">
+      <!-- Section for image search using Unsplash API -->
+      <section id="search-section" class="mb-4">
+        <h2>Look for an Image</h2>
+        <form id="search-form" class="form-inline justify-content-center">
+          <input
+            type="text"
+            id="search-input"
+            class="form-control mr-2"
+            placeholder="Search for an image..."
+            required
+          />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div
+          id="image-results"
+          class="d-flex flex-wrap justify-content-center mt-3"
+        ></div>
+      </section>
+
+      <!-- Section to allow image upload -->
+      <section id="upload-section" class="mb-4 text-center">
+        <h2>Offer Your Own Image</h2>
+        <input
+          type="file"
+          id="upload-input"
+          accept="image/*"
+          class="file-input"
+        />
+      </section>
+
+      <!-- Section for entering meme text and generating the meme -->
+      <section id="meme-options" class="mb-4 text-center">
+        <h2>Enscribe The Words Upon the Image</h2>
+        <input
+          type="text"
+          id="top-text"
+          class="form-control mb-2"
+          placeholder="Enter top text"
+        />
+        <input
+          type="text"
+          id="bottom-text"
+          class="form-control mb-2"
+          placeholder="Enter bottom text"
+        />
+        <button id="generate-btn" class="btn btn-success">
+          Forge the Meme
+        </button>
+      </section>
+
+      <!-- Section with the canvas that displays the final meme -->
+      <section id="meme-canvas-section" class="text-center">
+        <h2>Behold The Meme</h2>
+        <canvas id="meme-canvas" width="500" height="500" class="mb-3"></canvas>
+        <br />
+        <button id="download-btn" class="btn btn-warning">
+          Download The Creation
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
